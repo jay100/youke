@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+	"publish": "build --win -p always"
   },
   "author": "",
   "license": "ISC",
@@ -14,10 +15,12 @@
     "child_process": "^1.0.2",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
-    "ffmpeg-static": "^2.3.0"
+    "ffmpeg-static": "^2.3.0",
+	"electron-log": "^1.3.0",
+    "electron-updater": "^3.0.3"
   },
   "build": {
-    "appId": "com.youke.live",
+    "appId": "com.github.jay100.youke",
     "copyright": "LEON",
     "productName": "youke_pc",
     "asar": false,
@@ -32,6 +35,13 @@
     },
     "win": {
       "icon": "webuploader.png"
-    }
+    },
+	"publish": [
+      {
+        "provider": "github",
+        "owner": "jay100",
+        "repo": "youke"
+      }
+    ]
   }
 }
