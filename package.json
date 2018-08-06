@@ -1,0 +1,37 @@
+{
+  "name": "youke",
+  "version": "0.1.0",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "^2.3.0"
+  },
+  "build": {
+    "appId": "com.youke.live",
+    "copyright": "LEON",
+    "productName": "youke_pc",
+    "asar": false,
+    "dmg": {
+      "background": "webuploader.png",
+      "window": {
+        "x": 100,
+        "y": 100,
+        "width": 500,
+        "height": 300
+      }
+    },
+    "win": {
+      "icon": "webuploader.png"
+    }
+  }
+}
