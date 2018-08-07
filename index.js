@@ -11,7 +11,7 @@ const path = require('path');
 
 //指定 flash 路径，假定它与 main.js 放在同一目录中。
 let pluginName;
-console.log(process.platform);
+
 let pkg = require('./package.json')
 
 autoUpdater.autoDownload = false;
@@ -83,8 +83,8 @@ app.on('window-all-closed', function(){
 //var url = 'file://' + __dirname + '/dist/index.html?';
 
 //var url = 'http://localhost:8080';
-var url = 'https://192.168.2.75:8080';
-// var url = 'https://city.youkeup.com/desktop/index.html?v=1.0';
+//var url = 'https://192.168.2.75:8080';
+var url = 'https://city.youkeup.com/desktop/index.html?v='+pkg.version;
 
 // 关键代码在这里
 const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {

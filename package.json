@@ -22,7 +22,7 @@
   "build": {
     "appId": "com.github.jay100.youke",
     "copyright": "LEON",
-    "productName": "youke_pc",
+    "productName": "youke",
     "asar": false,
     "dmg": {
       "background": "webuploader.png",
