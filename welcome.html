@@ -56,7 +56,7 @@
           var randomInt = Math.floor(Math.random() * messages.length - 1);
           ele.innerText = messages[randomInt];
       },500)*/
-      setInterval(function () {
+      setTimeout(function () {
         ipc.send('finished-loading-dictinoary');
       },2000);
     }
