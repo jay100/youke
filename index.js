@@ -84,7 +84,7 @@ app.on('window-all-closed', function(){
 
 //var url = 'http://localhost:8080';
 //var url = 'https://192.168.2.75:8080';
-var url = 'https://city.youkeup.com/desktop/index.html?v='+pkg.version;
+var url = 'https://city.youkeup.com/desktop2/index.html?v='+pkg.version;
 
 // 关键代码在这里
 const shouldQuit = app.makeSingleInstance((commandLine, workingDirectory) => {
