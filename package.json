@@ -1,6 +1,6 @@
 {
   "name": "youke",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "有课教育在线直播平台！",
   "main": "index.js",
   "scripts": {
